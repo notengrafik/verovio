@@ -292,6 +292,40 @@
 		4D796B5E1D78641900A15238 /* harm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D796B5D1D78641900A15238 /* harm.cpp */; };
 		4D798CBD1B8AEDBA007281CA /* drawinginterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D798CBC1B8AEDBA007281CA /* drawinginterface.cpp */; };
 		4D798CBE1B8AEDBA007281CA /* drawinginterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D798CBC1B8AEDBA007281CA /* drawinginterface.cpp */; };
+		4D8919EB22AFAB5D00C8A8D9 /* atts_neumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919EA22AFAB5C00C8A8D9 /* atts_neumes.cpp */; };
+		4D8919EC22AFAB6B00C8A8D9 /* atts_neumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919EA22AFAB5C00C8A8D9 /* atts_neumes.cpp */; };
+		4D8919ED22AFAB6C00C8A8D9 /* atts_neumes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919EA22AFAB5C00C8A8D9 /* atts_neumes.cpp */; };
+		4D8919EE22AFAB7100C8A8D9 /* atts_neumes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D8919E922AFAB5C00C8A8D9 /* atts_neumes.h */; };
+		4D8919F422AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F022AFABE500C8A8D9 /* facsimileinterface.cpp */; };
+		4D8919F522AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F022AFABE500C8A8D9 /* facsimileinterface.cpp */; };
+		4D8919F622AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F022AFABE500C8A8D9 /* facsimileinterface.cpp */; };
+		4D8919F722AFABE500C8A8D9 /* facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F122AFABE500C8A8D9 /* facsimile.cpp */; };
+		4D8919F822AFABE500C8A8D9 /* facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F122AFABE500C8A8D9 /* facsimile.cpp */; };
+		4D8919F922AFABE500C8A8D9 /* facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F122AFABE500C8A8D9 /* facsimile.cpp */; };
+		4D8919FA22AFABE500C8A8D9 /* surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F222AFABE500C8A8D9 /* surface.cpp */; };
+		4D8919FB22AFABE500C8A8D9 /* surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F222AFABE500C8A8D9 /* surface.cpp */; };
+		4D8919FC22AFABE500C8A8D9 /* surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F222AFABE500C8A8D9 /* surface.cpp */; };
+		4D8919FD22AFABE500C8A8D9 /* zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F322AFABE500C8A8D9 /* zone.cpp */; };
+		4D8919FE22AFABE500C8A8D9 /* zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F322AFABE500C8A8D9 /* zone.cpp */; };
+		4D8919FF22AFABE500C8A8D9 /* zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D8919F322AFABE500C8A8D9 /* zone.cpp */; };
+		4D891A0822AFAC0D00C8A8D9 /* facsimileinterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0022AFAC0C00C8A8D9 /* facsimileinterface.h */; };
+		4D891A0922AFAC0D00C8A8D9 /* editortoolkit_mensural.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0122AFAC0D00C8A8D9 /* editortoolkit_mensural.h */; };
+		4D891A0A22AFAC0D00C8A8D9 /* facsimile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0222AFAC0D00C8A8D9 /* facsimile.h */; };
+		4D891A0B22AFAC0D00C8A8D9 /* editortoolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0322AFAC0D00C8A8D9 /* editortoolkit.h */; };
+		4D891A0C22AFAC0D00C8A8D9 /* editortoolkit_neume.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0422AFAC0D00C8A8D9 /* editortoolkit_neume.h */; };
+		4D891A0D22AFAC0D00C8A8D9 /* surface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0522AFAC0D00C8A8D9 /* surface.h */; };
+		4D891A0E22AFAC0D00C8A8D9 /* zone.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0622AFAC0D00C8A8D9 /* zone.h */; };
+		4D891A0F22AFAC0D00C8A8D9 /* editortoolkit_cmn.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D891A0722AFAC0D00C8A8D9 /* editortoolkit_cmn.h */; };
+		4D891A1222AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1022AFAC2200C8A8D9 /* editortoolkit_neume.cpp */; };
+		4D891A1322AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1022AFAC2200C8A8D9 /* editortoolkit_neume.cpp */; };
+		4D891A1422AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1022AFAC2200C8A8D9 /* editortoolkit_neume.cpp */; };
+		4D891A1522AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1122AFAC2300C8A8D9 /* editortoolkit_cmn.cpp */; };
+		4D891A1622AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1122AFAC2300C8A8D9 /* editortoolkit_cmn.cpp */; };
+		4D891A1722AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D891A1122AFAC2300C8A8D9 /* editortoolkit_cmn.cpp */; };
+		4D891A1822AFAF6B00C8A8D9 /* atts_facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE28F71940BCC100C76319 /* atts_facsimile.cpp */; };
+		4D891A1922AFAF6B00C8A8D9 /* atts_facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE28F71940BCC100C76319 /* atts_facsimile.cpp */; };
+		4D891A1A22AFAF6C00C8A8D9 /* atts_facsimile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE28F71940BCC100C76319 /* atts_facsimile.cpp */; };
+		4D891A1B22AFAF6F00C8A8D9 /* atts_facsimile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEE28F81940BCC100C76319 /* atts_facsimile.h */; };
 		4D89F90C201771A700A4D336 /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D89F90B201771A700A4D336 /* num.h */; };
 		4D89F90E201771AE00A4D336 /* num.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F90D201771AE00A4D336 /* num.cpp */; };
 		4D89F90F201771AE00A4D336 /* num.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D89F90D201771AE00A4D336 /* num.cpp */; };
@@ -852,6 +886,22 @@
 		4D796B5D1D78641900A15238 /* harm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = harm.cpp; path = src/harm.cpp; sourceTree = "<group>"; };
 		4D797B041A67C55F007637BD /* devicecontextbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = devicecontextbase.h; path = include/vrv/devicecontextbase.h; sourceTree = "<group>"; };
 		4D798CBC1B8AEDBA007281CA /* drawinginterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = drawinginterface.cpp; path = src/drawinginterface.cpp; sourceTree = "<group>"; };
+		4D8919E922AFAB5C00C8A8D9 /* atts_neumes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = atts_neumes.h; path = libmei/atts_neumes.h; sourceTree = "<group>"; };
+		4D8919EA22AFAB5C00C8A8D9 /* atts_neumes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = atts_neumes.cpp; path = libmei/atts_neumes.cpp; sourceTree = "<group>"; };
+		4D8919F022AFABE500C8A8D9 /* facsimileinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = facsimileinterface.cpp; path = src/facsimileinterface.cpp; sourceTree = "<group>"; };
+		4D8919F122AFABE500C8A8D9 /* facsimile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = facsimile.cpp; path = src/facsimile.cpp; sourceTree = "<group>"; };
+		4D8919F222AFABE500C8A8D9 /* surface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = surface.cpp; path = src/surface.cpp; sourceTree = "<group>"; };
+		4D8919F322AFABE500C8A8D9 /* zone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = zone.cpp; path = src/zone.cpp; sourceTree = "<group>"; };
+		4D891A0022AFAC0C00C8A8D9 /* facsimileinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = facsimileinterface.h; path = include/vrv/facsimileinterface.h; sourceTree = "<group>"; };
+		4D891A0122AFAC0D00C8A8D9 /* editortoolkit_mensural.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editortoolkit_mensural.h; path = include/vrv/editortoolkit_mensural.h; sourceTree = "<group>"; };
+		4D891A0222AFAC0D00C8A8D9 /* facsimile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = facsimile.h; path = include/vrv/facsimile.h; sourceTree = "<group>"; };
+		4D891A0322AFAC0D00C8A8D9 /* editortoolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editortoolkit.h; path = include/vrv/editortoolkit.h; sourceTree = "<group>"; };
+		4D891A0422AFAC0D00C8A8D9 /* editortoolkit_neume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editortoolkit_neume.h; path = include/vrv/editortoolkit_neume.h; sourceTree = "<group>"; };
+		4D891A0522AFAC0D00C8A8D9 /* surface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = surface.h; path = include/vrv/surface.h; sourceTree = "<group>"; };
+		4D891A0622AFAC0D00C8A8D9 /* zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zone.h; path = include/vrv/zone.h; sourceTree = "<group>"; };
+		4D891A0722AFAC0D00C8A8D9 /* editortoolkit_cmn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = editortoolkit_cmn.h; path = include/vrv/editortoolkit_cmn.h; sourceTree = "<group>"; };
+		4D891A1022AFAC2200C8A8D9 /* editortoolkit_neume.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = editortoolkit_neume.cpp; path = src/editortoolkit_neume.cpp; sourceTree = "<group>"; };
+		4D891A1122AFAC2300C8A8D9 /* editortoolkit_cmn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = editortoolkit_cmn.cpp; path = src/editortoolkit_cmn.cpp; sourceTree = "<group>"; };
 		4D89F90B201771A700A4D336 /* num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = num.h; path = include/vrv/num.h; sourceTree = "<group>"; };
 		4D89F90D201771AE00A4D336 /* num.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = num.cpp; path = src/num.cpp; sourceTree = "<group>"; };
 		4D89F9112018A93200A4D336 /* svg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = svg.cpp; path = src/svg.cpp; sourceTree = "<group>"; };
@@ -1213,6 +1263,25 @@
 			name = tools;
 			sourceTree = "<group>";
 		};
+		4D8919EF22AFAB9B00C8A8D9 /* facsimile */ = {
+			isa = PBXGroup;
+			children = (
+				4D891A1122AFAC2300C8A8D9 /* editortoolkit_cmn.cpp */,
+				4D891A1022AFAC2200C8A8D9 /* editortoolkit_neume.cpp */,
+				4D891A0722AFAC0D00C8A8D9 /* editortoolkit_cmn.h */,
+				4D891A0122AFAC0D00C8A8D9 /* editortoolkit_mensural.h */,
+				4D891A0422AFAC0D00C8A8D9 /* editortoolkit_neume.h */,
+				4D891A0322AFAC0D00C8A8D9 /* editortoolkit.h */,
+				4D891A0222AFAC0D00C8A8D9 /* facsimile.h */,
+				4D891A0522AFAC0D00C8A8D9 /* surface.h */,
+				4D891A0622AFAC0D00C8A8D9 /* zone.h */,
+				4D8919F122AFABE500C8A8D9 /* facsimile.cpp */,
+				4D8919F222AFABE500C8A8D9 /* surface.cpp */,
+				4D8919F322AFABE500C8A8D9 /* zone.cpp */,
+			);
+			name = facsimile;
+			sourceTree = "<group>";
+		};
 		4D95D4F31D717CD600B2B856 /* systemelements */ = {
 			isa = PBXGroup;
 			children = (
@@ -1302,6 +1371,8 @@
 				4DF2AF7D1A62F6A50016F869 /* drawinginterface.h */,
 				8F086EBE188539540037FD8E /* durationinterface.cpp */,
 				8F59291518854BF800FE51AD /* durationinterface.h */,
+				4D8919F022AFABE500C8A8D9 /* facsimileinterface.cpp */,
+				4D891A0022AFAC0C00C8A8D9 /* facsimileinterface.h */,
 				4D94721E20CA702C00C780C8 /* linkinginterface.cpp */,
 				4D94721C20CA701000C780C8 /* linkinginterface.h */,
 				8F086ECF188539540037FD8E /* pitchinterface.cpp */,
@@ -1357,6 +1428,8 @@
 				4DEE29041940BCC100C76319 /* atts_mensural.h */,
 				4DEE29051940BCC100C76319 /* atts_midi.cpp */,
 				4DEE29061940BCC100C76319 /* atts_midi.h */,
+				4D8919EA22AFAB5C00C8A8D9 /* atts_neumes.cpp */,
+				4D8919E922AFAB5C00C8A8D9 /* atts_neumes.h */,
 				4D3FF8D919BADD7A00B105B5 /* atts_pagebased.cpp */,
 				4D3FF8DA19BADD7A00B105B5 /* atts_pagebased.h */,
 				4DF9D2861C18DE270069E8C8 /* atts_performance.cpp */,
@@ -1451,6 +1524,7 @@
 				4DF28A011A754DAA00BA9F7D /* controlelements */,
 				8F086F3A18853A540037FD8E /* layerelements */,
 				4DA144881C2AB24400CB7CEE /* textelements */,
+				4D8919EF22AFAB9B00C8A8D9 /* facsimile */,
 				4DC34B9E19BC33A0006175CD /* interfaces */,
 				8F086F3918853A190037FD8E /* view */,
 				4D422103199805F700963292 /* att.cpp */,
@@ -1662,6 +1736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEC4DD421C8295700D1D273 /* expan.h in Headers */,
+				4D891A0922AFAC0D00C8A8D9 /* editortoolkit_mensural.h in Headers */,
 				4DB3D8A51F828E9100B5FC2B /* areaposinterface.h in Headers */,
 				4DEC4DD321C8295700D1D273 /* restore.h in Headers */,
 				4D9C53111B52E4AE0003C6EC /* checked.h in Headers */,
@@ -1691,9 +1766,11 @@
 				4DB3D8D61F83D13100B5FC2B /* tempo.h in Headers */,
 				8F59293C18854BF800FE51AD /* durationinterface.h in Headers */,
 				4DF9D2991C1B3F0A0069E8C8 /* attclasses.h in Headers */,
+				4D891A0E22AFAC0D00C8A8D9 /* zone.h in Headers */,
 				8F59293D18854BF800FE51AD /* toolkit.h in Headers */,
 				4D1D733C1A1D0390001E08F6 /* smufl.h in Headers */,
 				40C2E4212052A6EC0003625F /* pb.h in Headers */,
+				4D891A0F22AFAC0D00C8A8D9 /* editortoolkit_cmn.h in Headers */,
 				40BD9393206B95120037BF8E /* annot.h in Headers */,
 				4DEC4DD621C8295700D1D273 /* del.h in Headers */,
 				4DB726C81B8BB0F30040231B /* text.h in Headers */,
@@ -1724,8 +1801,10 @@
 				4DB3D8EC1F83D18300B5FC2B /* proport.h in Headers */,
 				4DEC4DDE21C8295700D1D273 /* lem.h in Headers */,
 				4DC12A5D1F73F888000440E9 /* pghead2.h in Headers */,
+				4D891A0D22AFAC0D00C8A8D9 /* surface.h in Headers */,
 				8F59294518854BF800FE51AD /* layerelement.h in Headers */,
 				4DB3D8AD1F83D04A00B5FC2B /* atts_mensural.h in Headers */,
+				4D891A0B22AFAC0D00C8A8D9 /* editortoolkit.h in Headers */,
 				4D4FCD0A1F5455F10009C455 /* staffgrp.h in Headers */,
 				4DB3D8C41F83D0F300B5FC2B /* anchoredtext.h in Headers */,
 				8F59294718854BF800FE51AD /* measure.h in Headers */,
@@ -1774,6 +1853,7 @@
 				8F59295018854BF800FE51AD /* scoredef.h in Headers */,
 				4DB3D8AB1F83D03500B5FC2B /* atts_critapp.h in Headers */,
 				4DB3D8B01F83D05500B5FC2B /* atts_pagebased.h in Headers */,
+				4D891A1B22AFAF6F00C8A8D9 /* atts_facsimile.h in Headers */,
 				4DEC4DD821C8295700D1D273 /* unclear.h in Headers */,
 				4DDBBB581C7AE43E00054AFF /* dynam.h in Headers */,
 				8F59295118854BF800FE51AD /* slur.h in Headers */,
@@ -1784,15 +1864,18 @@
 				403BEFF4206C00DA00D022D5 /* mrpt.h in Headers */,
 				8F59295318854BF800FE51AD /* svgdevicecontext.h in Headers */,
 				4DB3D8FA1F83D1F000B5FC2B /* boundingbox.h in Headers */,
+				4D8919EE22AFAB7100C8A8D9 /* atts_neumes.h in Headers */,
 				4D766F0620ACAD74006875D8 /* nc.h in Headers */,
 				8F59295518854BF800FE51AD /* system.h in Headers */,
 				4DB3D8E01F83D15600B5FC2B /* btrem.h in Headers */,
+				4D891A0C22AFAC0D00C8A8D9 /* editortoolkit_neume.h in Headers */,
 				4DB3D8EE1F83D19100B5FC2B /* space.h in Headers */,
 				8F59295618854BF800FE51AD /* tie.h in Headers */,
 				8F59295718854BF800FE51AD /* tuplet.h in Headers */,
 				4DEC4DD521C8295700D1D273 /* orig.h in Headers */,
 				4D766F0720ACAD74006875D8 /* neume.h in Headers */,
 				4D1BE7811C69434C0086DC0E /* MidiEventList.h in Headers */,
+				4D891A0822AFAC0D00C8A8D9 /* facsimileinterface.h in Headers */,
 				8F59295818854BF800FE51AD /* view.h in Headers */,
 				8F59295918854BF800FE51AD /* vrv.h in Headers */,
 				8F59295A18854BF800FE51AD /* vrvdef.h in Headers */,
@@ -1818,6 +1901,7 @@
 				4D1BD1B921908D78000D35B2 /* halfmrpt.h in Headers */,
 				4DF4407A1D3D085600152B7E /* functorparams.h in Headers */,
 				4D763EC91987D067003FCAB5 /* metersig.h in Headers */,
+				4D891A0A22AFAC0D00C8A8D9 /* facsimile.h in Headers */,
 				40DA9C3720905CEB006BED92 /* ioabc.h in Headers */,
 				4DB3D8CD1F83D11100B5FC2B /* harm.h in Headers */,
 				40D45EC2204EEAFB009C1EC9 /* instrdef.h in Headers */,
@@ -1960,6 +2044,7 @@
 				4D1693F61E3A44F300569BF4 /* barline.cpp in Sources */,
 				4D89F90F201771AE00A4D336 /* num.cpp in Sources */,
 				4D1693F71E3A44F300569BF4 /* bboxdevicecontext.cpp in Sources */,
+				4D8919EC22AFAB6B00C8A8D9 /* atts_neumes.cpp in Sources */,
 				4D1693F81E3A44F300569BF4 /* beam.cpp in Sources */,
 				4D4FCD131F54570E0009C455 /* staffdef.cpp in Sources */,
 				4D4335D31ED4567F003BE1A9 /* atts_externalsymbols.cpp in Sources */,
@@ -1981,6 +2066,7 @@
 				4D1694001E3A44F300569BF4 /* toolkit.cpp in Sources */,
 				4DEC4D9F21C81E9400D1D273 /* orig.cpp in Sources */,
 				4D1694011E3A44F300569BF4 /* MidiEvent.cpp in Sources */,
+				4D891A1622AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */,
 				4D1694021E3A44F300569BF4 /* io.cpp in Sources */,
 				4D1694031E3A44F300569BF4 /* harm.cpp in Sources */,
 				4DB3D8DE1F83D15200B5FC2B /* btrem.cpp in Sources */,
@@ -1992,6 +2078,7 @@
 				4DB3D8E31F83D16300B5FC2B /* elementpart.cpp in Sources */,
 				4D1694061E3A44F300569BF4 /* iomei.cpp in Sources */,
 				4D1694071E3A44F300569BF4 /* iomusxml.cpp in Sources */,
+				4D8919FB22AFABE500C8A8D9 /* surface.cpp in Sources */,
 				4D7927D120ECCC6D0002A45D /* view_slur.cpp in Sources */,
 				4D1694081E3A44F300569BF4 /* iopae.cpp in Sources */,
 				4D1694091E3A44F300569BF4 /* atts_critapp.cpp in Sources */,
@@ -2020,6 +2107,7 @@
 				4DC12A7D1F740FB9000440E9 /* view_running.cpp in Sources */,
 				4D1694191E3A44F300569BF4 /* drawinginterface.cpp in Sources */,
 				4D16947A1E41DCE000569BF4 /* atts_cmnornaments.cpp in Sources */,
+				4D8919F522AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */,
 				4D16946A1E3A455100569BF4 /* humlib.cpp in Sources */,
 				4D72A5E3208A3822009DEC1E /* beatrpt.cpp in Sources */,
 				4D16941A1E3A44F300569BF4 /* view_text.cpp in Sources */,
@@ -2069,15 +2157,18 @@
 				4D1694351E3A44F300569BF4 /* editorial.cpp in Sources */,
 				4D1694361E3A44F300569BF4 /* tempo.cpp in Sources */,
 				4D1694371E3A44F300569BF4 /* tie.cpp in Sources */,
+				4D8919FE22AFABE500C8A8D9 /* zone.cpp in Sources */,
 				4D1694381E3A44F300569BF4 /* MidiFile.cpp in Sources */,
 				4DB3D8CE1F83D11500B5FC2B /* mordent.cpp in Sources */,
 				4D6331FC1F46DD3A00A0D6BF /* plistinterface.cpp in Sources */,
 				4D1694391E3A44F300569BF4 /* tuplet.cpp in Sources */,
 				4D72A5E0208A37F0009DEC1E /* mnum.cpp in Sources */,
+				4D891A1922AFAF6B00C8A8D9 /* atts_facsimile.cpp in Sources */,
 				4D4FCD0D1F5455FF0009C455 /* staffgrp.cpp in Sources */,
 				4D16943A1E3A44F300569BF4 /* pugixml.cpp in Sources */,
 				403BEFF5206C00E900D022D5 /* multirest.cpp in Sources */,
 				4D16943B1E3A44F300569BF4 /* Binasc.cpp in Sources */,
+				4D891A1322AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */,
 				4D16943C1E3A44F300569BF4 /* view_beam.cpp in Sources */,
 				40D45EC3204EEAFE009C1EC9 /* instrdef.cpp in Sources */,
 				4D16943D1E3A44F300569BF4 /* view_element.cpp in Sources */,
@@ -2099,6 +2190,7 @@
 				4D6122BF1F77E1E000FC90A0 /* rend.cpp in Sources */,
 				4D1694481E3A44F300569BF4 /* controlelement.cpp in Sources */,
 				4DEC4DA321C81EB300D1D273 /* rdg.cpp in Sources */,
+				4D8919F822AFABE500C8A8D9 /* facsimile.cpp in Sources */,
 				4D1694491E3A44F300569BF4 /* main.cpp in Sources */,
 				4D16944A1E3A44F300569BF4 /* atts_shared.cpp in Sources */,
 				4D16944B1E3A44F300569BF4 /* metersig.cpp in Sources */,
@@ -2139,6 +2231,7 @@
 				4DB3D89E1F7E7FAA00B5FC2B /* fig.cpp in Sources */,
 				4D4FCD121F54570E0009C455 /* staffdef.cpp in Sources */,
 				8F086EE2188539540037FD8E /* verticalaligner.cpp in Sources */,
+				4D8919EB22AFAB5D00C8A8D9 /* atts_neumes.cpp in Sources */,
 				4DEC4D9621C81E3B00D1D273 /* expand.cpp in Sources */,
 				8F086EE4188539540037FD8E /* barline.cpp in Sources */,
 				4DC12A7C1F740FB9000440E9 /* view_running.cpp in Sources */,
@@ -2160,6 +2253,7 @@
 				40D0D5E21E3BD7FE00E6BF5C /* turn.cpp in Sources */,
 				40C2E41E2052A6E00003625F /* sb.cpp in Sources */,
 				4D1BE76D1C688F5A0086DC0E /* MidiEvent.cpp in Sources */,
+				4D891A1522AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */,
 				8F086EEC188539540037FD8E /* io.cpp in Sources */,
 				4D796B5E1D78641900A15238 /* harm.cpp in Sources */,
 				4DB3072F1AC9ED2500EE0982 /* space.cpp in Sources */,
@@ -2171,6 +2265,7 @@
 				4D8CD8A61B4E922A00F0756F /* atts_critapp.cpp in Sources */,
 				4DEC4D7A21C8048700D1D273 /* abbr.cpp in Sources */,
 				4067E4C81DDDAF0000C6E059 /* fermata.cpp in Sources */,
+				4D8919FA22AFABE500C8A8D9 /* surface.cpp in Sources */,
 				8F086EF1188539540037FD8E /* keysig.cpp in Sources */,
 				4D09FAED1D78B8C40099FDFE /* atts_midi.cpp in Sources */,
 				4DEC4D9E21C81E9400D1D273 /* orig.cpp in Sources */,
@@ -2199,6 +2294,7 @@
 				4D6122BE1F77E1E000FC90A0 /* rend.cpp in Sources */,
 				403BEFF0206C00B500D022D5 /* multirpt.cpp in Sources */,
 				4D766EFA20ACAD63006875D8 /* syllable.cpp in Sources */,
+				4D8919F422AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */,
 				8F086EF7188539540037FD8E /* multirest.cpp in Sources */,
 				4D766EFB20ACAD63006875D8 /* nc.cpp in Sources */,
 				4DEC4DAE21C81F0600D1D273 /* sic.cpp in Sources */,
@@ -2248,15 +2344,18 @@
 				4D89F9122018A93300A4D336 /* svg.cpp in Sources */,
 				8F086F05188539540037FD8E /* tuplet.cpp in Sources */,
 				4D1BE7851C6A40A80086DC0E /* pugixml.cpp in Sources */,
+				4D8919FD22AFABE500C8A8D9 /* zone.cpp in Sources */,
 				4D1BE76B1C688F5A0086DC0E /* Binasc.cpp in Sources */,
 				4DEC4DBA21C8288900D1D273 /* choice.cpp in Sources */,
 				8F086F06188539540037FD8E /* view_beam.cpp in Sources */,
 				403BEFED206C00B500D022D5 /* beatrpt.cpp in Sources */,
 				8F086F08188539540037FD8E /* view_element.cpp in Sources */,
+				4D891A1822AFAF6B00C8A8D9 /* atts_facsimile.cpp in Sources */,
 				8F086F09188539540037FD8E /* view_graph.cpp in Sources */,
 				8F086F0A188539540037FD8E /* view_page.cpp in Sources */,
 				4DEC4DA621C81ED400D1D273 /* reg.cpp in Sources */,
 				8F086F0B188539540037FD8E /* view_tuplet.cpp in Sources */,
+				4D891A1222AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */,
 				4D4C26ED1EF7E75400681770 /* label.cpp in Sources */,
 				40D45EC1204EEAE1009C1EC9 /* instrdef.cpp in Sources */,
 				40910FEC1E42734C00DB1FA5 /* mordent.cpp in Sources */,
@@ -2278,6 +2377,7 @@
 				4D6DF9F520E1071F00C12BBD /* subst.cpp in Sources */,
 				4DEE291B1940BCC100C76319 /* atts_shared.cpp in Sources */,
 				4D763EC61987D04E003FCAB5 /* metersig.cpp in Sources */,
+				4D8919F722AFABE500C8A8D9 /* facsimile.cpp in Sources */,
 				8F7DD0551EAF3682001B072A /* fb.cpp in Sources */,
 				4D422104199805F800963292 /* att.cpp in Sources */,
 				4D4221061998A8CE00963292 /* atts_mensural.cpp in Sources */,
@@ -2318,6 +2418,7 @@
 				4DB3D8F01F83D1A700B5FC2B /* fig.cpp in Sources */,
 				8F3DD36718854B410051330C /* verticalaligner.cpp in Sources */,
 				4D766F0220ACAD6E006875D8 /* nc.cpp in Sources */,
+				4D8919ED22AFAB6C00C8A8D9 /* atts_neumes.cpp in Sources */,
 				4DEC4D9821C81E3B00D1D273 /* expand.cpp in Sources */,
 				4DC12A651F73F898000440E9 /* pghead2.cpp in Sources */,
 				4DB3D8C81F83D10000B5FC2B /* dir.cpp in Sources */,
@@ -2389,6 +2490,7 @@
 				403BEFF2206C00D700D022D5 /* mrpt2.cpp in Sources */,
 				8F3DD34E18854B2E0051330C /* pitchinterface.cpp in Sources */,
 				4DC12A861F741110000440E9 /* pgfoot2.cpp in Sources */,
+				4D891A1A22AFAF6C00C8A8D9 /* atts_facsimile.cpp in Sources */,
 				4DA1448B1C2AB28700CB7CEE /* textelement.cpp in Sources */,
 				8F3DD35018854B2E0051330C /* positioninterface.cpp in Sources */,
 				4DB3D8ED1F83D18C00B5FC2B /* space.cpp in Sources */,
@@ -2404,16 +2506,20 @@
 				4D1BE7721C688F5A0086DC0E /* MidiFile.cpp in Sources */,
 				4D4335D41ED45680003BE1A9 /* atts_externalsymbols.cpp in Sources */,
 				4DEC4DAC21C81EEC00D1D273 /* restore.cpp in Sources */,
+				4D8919F922AFABE500C8A8D9 /* facsimile.cpp in Sources */,
 				8F3DD35A18854B2E0051330C /* tuplet.cpp in Sources */,
+				4D8919FF22AFABE500C8A8D9 /* zone.cpp in Sources */,
 				8F3DD32E18854B250051330C /* layer.cpp in Sources */,
 				8F3DD33018854B250051330C /* measure.cpp in Sources */,
 				8F3DD33218854B250051330C /* page.cpp in Sources */,
 				403BEFF6206C00F000D022D5 /* mrpt.cpp in Sources */,
 				4DB3D8CC1F83D10E00B5FC2B /* harm.cpp in Sources */,
+				4D891A1422AFAC2300C8A8D9 /* editortoolkit_neume.cpp in Sources */,
 				8F3DD33418854B250051330C /* scoredef.cpp in Sources */,
 				8F3DD33618854B250051330C /* staff.cpp in Sources */,
 				4DB3D8C61F83D0FA00B5FC2B /* breath.cpp in Sources */,
 				4DB3D8CF1F83D11600B5FC2B /* mordent.cpp in Sources */,
+				4D891A1722AFAC2300C8A8D9 /* editortoolkit_cmn.cpp in Sources */,
 				4DB3D8D71F83D13600B5FC2B /* trill.cpp in Sources */,
 				4D6413802035F68600BB630E /* mdiv.cpp in Sources */,
 				4D766F0320ACAD6E006875D8 /* neume.cpp in Sources */,
@@ -2422,6 +2528,7 @@
 				4DE96E3D21C4373200CB85BE /* bracketspan.cpp in Sources */,
 				4D6331F71F46D2CB00A0D6BF /* arpeg.cpp in Sources */,
 				4DB78743201F9F7300394520 /* svg.cpp in Sources */,
+				4D8919F622AFABE500C8A8D9 /* facsimileinterface.cpp in Sources */,
 				4DB3D8F61F83D1DC00B5FC2B /* view_mensural.cpp in Sources */,
 				4DB3D8E41F83D16400B5FC2B /* elementpart.cpp in Sources */,
 				8F3DD33818854B250051330C /* system.cpp in Sources */,
@@ -2481,6 +2588,7 @@
 				4DC34BAB19BC4A83006175CD /* custos.cpp in Sources */,
 				4DEC4DB821C8270100D1D273 /* unclear.cpp in Sources */,
 				4D89F910201771AE00A4D336 /* num.cpp in Sources */,
+				4D8919FC22AFABE500C8A8D9 /* surface.cpp in Sources */,
 				4D4335D11ED4502C003BE1A9 /* atts_visual.cpp in Sources */,
 				4D6331FD1F46DD3A00A0D6BF /* plistinterface.cpp in Sources */,
 				4DC34BAD19BC4A83006175CD /* dot.cpp in Sources */,
