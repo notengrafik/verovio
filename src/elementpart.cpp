@@ -100,20 +100,14 @@ wchar_t Flag::GetSmuflCode(data_STEMDIRECTION stemDir)
     }
 }
 
-Point Flag::GetStemUpSE(Doc *doc, int staffSize, bool graceSize, wchar_t &code)
+Point Flag::GetStemAttachmentPoint(Doc *doc, int staffSize, bool graceSize, wchar_t &code, bool stemUp)
 {
-    code = this->GetSmuflCode(STEMDIRECTION_up);
+    code = this->GetSmuflCode(stemUp ? STEMDIRECTION_up : STEMDIRECTION_down);
 
-    int h = doc->GetGlyphHeight(code, staffSize, graceSize);
+    int h = stemUp ? doc->GetGlyphHeight(code, staffSize, graceSize) : 0;
     return Point(0, h + doc->GetGlyphDescender(code, staffSize, graceSize));
 }
 
-Point Flag::GetStemDownNW(Doc *doc, int staffSize, bool graceSize, wchar_t &code)
-{
-    code = this->GetSmuflCode(STEMDIRECTION_down);
-
-    return Point(0, doc->GetGlyphDescender(code, staffSize, graceSize));
-}
 
 //----------------------------------------------------------------------------
 // TupletBracket
@@ -400,21 +394,11 @@ int Stem::CalcStem(FunctorParams *functorParams)
     if (!this->HasStemLen() || (this->GetStemLen() != 0)) {
         Point p;
         if (this->GetDrawingStemDir() == STEMDIRECTION_up) {
-            if (this->GetStemPos() == STEMPOSITION_left) {
-                p = params->m_interface->GetStemDownNW(params->m_doc, staffSize, drawingCueSize);
-            }
-            else {
-                p = params->m_interface->GetStemUpSE(params->m_doc, staffSize, drawingCueSize);
-            }
+            p = params->m_interface->GetStemAttachmentPoint(params->m_doc, staffSize, drawingCueSize, this->GetStemPos() != STEMPOSITION_left);
             this->SetDrawingStemLen(baseStem + params->m_chordStemLength + p.y);
         }
         else {
-            if (this->GetStemPos() == STEMPOSITION_right) {
-                p = params->m_interface->GetStemUpSE(params->m_doc, staffSize, drawingCueSize);
-            }
-            else {
-                p = params->m_interface->GetStemDownNW(params->m_doc, staffSize, drawingCueSize);
-            }
+            p = params->m_interface->GetStemAttachmentPoint(params->m_doc, staffSize, drawingCueSize, this->GetStemPos() == STEMPOSITION_right);
             this->SetDrawingStemLen(-(baseStem + params->m_chordStemLength - p.y));
         }
         this->SetDrawingYRel(this->GetDrawingYRel() + p.y);
@@ -471,12 +455,7 @@ int Stem::CalcStem(FunctorParams *functorParams)
         assert(flag);
         Point stemEnd;
         wchar_t flagCode = 0;
-        if (this->GetDrawingStemDir() == STEMDIRECTION_up) {
-            stemEnd = flag->GetStemUpSE(params->m_doc, staffSize, drawingCueSize, flagCode);
-        }
-        else {
-            stemEnd = flag->GetStemDownNW(params->m_doc, staffSize, drawingCueSize, flagCode);
-        }
+        stemEnd = flag->GetStemAttachmentPoint(params->m_doc, staffSize, drawingCueSize, flagCode, this->GetDrawingStemDir());
         // Trick for shortening the stem with DUR_8
         flagHeight = stemEnd.y;
     }

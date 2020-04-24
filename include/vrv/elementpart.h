@@ -109,8 +109,7 @@ public:
 
     wchar_t GetSmuflCode(data_STEMDIRECTION stemDir);
 
-    Point GetStemUpSE(Doc *doc, int staffSize, bool graceSize, wchar_t &code);
-    Point GetStemDownNW(Doc *doc, int staffSize, bool graceSize, wchar_t &code);
+    Point GetStemAttachmentPoint(Doc *doc, int staffSize, bool graceSize, wchar_t &code, bool stemUp);
 
     //----------//
     // Functors //

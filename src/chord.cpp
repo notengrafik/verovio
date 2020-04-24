@@ -338,18 +338,11 @@ bool Chord::HasCrossStaff()
     return ((staffAbove != NULL) || (staffBelow != NULL));
 }
 
-Point Chord::GetStemUpSE(Doc *doc, int staffSize, bool isCueSize)
+Point Chord::GetStemAttachmentPoint(Doc *doc, int staffSize, bool isCueSize, bool stemUp)
 {
-    Note *bottomNote = this->GetBottomNote();
-    assert(bottomNote);
-    return bottomNote->GetStemUpSE(doc, staffSize, isCueSize);
-}
-
-Point Chord::GetStemDownNW(Doc *doc, int staffSize, bool isCueSize)
-{
-    Note *topNote = this->GetTopNote();
-    assert(topNote);
-    return topNote->GetStemDownNW(doc, staffSize, isCueSize);
+    Note *anchorNote = stemUp ? this->GetBottomNote() : this->GetTopNote();
+    assert(anchorNote);
+    return anchorNote->GetStemAttachmentPoint(doc, staffSize, isCueSize, stemUp);
 }
 
 int Chord::CalcStemLenInThirdUnits(Staff *staff)

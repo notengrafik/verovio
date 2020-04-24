@@ -233,21 +233,30 @@ void Note::SetCluster(ChordCluster *cluster, int position)
     m_clusterPosition = position;
 }
 
-Point Note::GetStemUpSE(Doc *doc, int staffSize, bool isCueSize)
+Point Note::GetStemAttachmentPoint(Doc *doc, int staffSize, bool isCueSize, bool stemUp)
 {
     int defaultYShift = doc->GetDrawingUnit(staffSize) / 4;
     if (isCueSize) defaultYShift = doc->GetCueSize(defaultYShift);
-    // x default is always set to the right for now
-    int defaultXShift = doc->GetGlyphWidth(SMUFL_E0A3_noteheadHalf, staffSize, isCueSize);
-    // adjust the x shift in order to take the stem width into account
-    defaultXShift -= doc->GetDrawingStemWidth(staffSize) / 2;
+    int stemOffset = doc->GetDrawingStemWidth(staffSize) / 2;
+    int defaultXShift;
+    SMuFLGlyphAnchor stemAnchor;
+    if (stemUp) {
+        int glyphWidth = doc->GetGlyphWidth(SMUFL_E0A3_noteheadHalf, staffSize, isCueSize);
+        defaultXShift = glyphWidth - stemOffset;
+        stemAnchor = SMUFL_stemUpSE;
+    }
+    else {
+        defaultXShift = stemOffset;
+        defaultYShift *= -1;
+        stemAnchor = SMUFL_stemDownNW;
+    }
     Point p(defaultXShift, defaultYShift);
 
     // Here we should get the notehead value
     wchar_t code = SMUFL_E0A4_noteheadBlack;
 
     // This is never called for now because mensural notes do not have stem/flag children
-    // For changingg this, change Note::CalcStem and Note::PrepareLayerElementParts
+    // For changing this, change Note::CalcStem and Note::PrepareLayerElementParts
     if (this->IsMensuralDur()) {
         // For mensural notation, get the code and adjust the default stem position
         code = this->GetMensuralSmuflNoteHead();
@@ -263,47 +272,8 @@ Point Note::GetStemUpSE(Doc *doc, int staffSize, bool isCueSize)
     Glyph *glyph = Resources::GetGlyph(code);
     assert(glyph);
 
-    if (glyph->HasAnchor(SMUFL_stemUpSE)) {
-        const Point *anchor = glyph->GetAnchor(SMUFL_stemUpSE);
-        assert(anchor);
-        p = doc->ConvertFontPoint(glyph, *anchor, staffSize, isCueSize);
-    }
-
-    return p;
-}
-
-Point Note::GetStemDownNW(Doc *doc, int staffSize, bool isCueSize)
-{
-    int defaultYShift = doc->GetDrawingUnit(staffSize) / 4;
-    if (isCueSize) defaultYShift = doc->GetCueSize(defaultYShift);
-    // x default is always set to the left for now
-    int defaultXShift = 0;
-    // adjust the x shift in order to take the stem width into account
-    defaultXShift += doc->GetDrawingStemWidth(staffSize) / 2;
-    Point p(defaultXShift, -defaultYShift);
-
-    // Here we should get the notehead value
-    wchar_t code = SMUFL_E0A4_noteheadBlack;
-
-    // This is never called for now because mensural notes do not have stem/flag children
-    // See comment above
-    if (this->IsMensuralDur()) {
-        // For mensural notation, get the code and adjust the default stem position
-        code = this->GetMensuralSmuflNoteHead();
-        p.y = -doc->GetGlyphHeight(code, staffSize, isCueSize) / 2;
-        p.x = doc->GetGlyphWidth(code, staffSize, isCueSize);
-    }
-
-    // Use the default for standard quarter and half note heads
-    if ((code == SMUFL_E0A3_noteheadHalf) || (code == SMUFL_E0A4_noteheadBlack)) {
-        return p;
-    }
-
-    Glyph *glyph = Resources::GetGlyph(code);
-    assert(glyph);
-
-    if (glyph->HasAnchor(SMUFL_stemDownNW)) {
-        const Point *anchor = glyph->GetAnchor(SMUFL_stemDownNW);
+    if (glyph->HasAnchor(stemAnchor)) {
+        const Point *anchor = glyph->GetAnchor(stemAnchor);
         assert(anchor);
         p = doc->ConvertFontPoint(glyph, *anchor, staffSize, isCueSize);
     }

@@ -184,11 +184,11 @@ void BeamSegment::CalcBeam(
             y2 = coord->m_closestNote->GetDrawingY();
             if (beamInterface->m_drawingPlace == BEAMPLACE_above) {
                 y1 -= doc->GetDrawingStemWidth(staff->m_drawingStaffSize);
-                y2 += stemmedInterface->GetStemUpSE(doc, staff->m_drawingStaffSize, beamInterface->m_cueSize).y;
+                y2 += stemmedInterface->GetStemAttachmentPoint(doc, staff->m_drawingStaffSize, beamInterface->m_cueSize, true).y;
             }
             else {
                 y1 += doc->GetDrawingStemWidth(staff->m_drawingStaffSize);
-                y2 += stemmedInterface->GetStemDownNW(doc, staff->m_drawingStaffSize, beamInterface->m_cueSize).y;
+                y2 += stemmedInterface->GetStemAttachmentPoint(doc, staff->m_drawingStaffSize, beamInterface->m_cueSize, false).y;
             }
 
             if (coord->m_element->Is(CHORD)) {
