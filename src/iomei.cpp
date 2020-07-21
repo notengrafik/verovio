@@ -1215,6 +1215,7 @@ void MEIOutput::WriteFermata(pugi::xml_node currentNode, Fermata *fermata)
     fermata->WriteColor(currentNode);
     fermata->WriteFermataVis(currentNode);
     fermata->WritePlacement(currentNode);
+    fermata->WriteExtSym(currentNode);
 }
 
 void MEIOutput::WriteGliss(pugi::xml_node currentNode, Gliss *gliss)
@@ -1384,6 +1385,7 @@ void MEIOutput::WriteTrill(pugi::xml_node currentNode, Trill *trill)
     trill->WriteNNumberLike(currentNode);
     trill->WriteOrnamentAccid(currentNode);
     trill->WritePlacement(currentNode);
+    trill->WriteExtSym(currentNode);
 }
 
 void MEIOutput::WriteTurn(pugi::xml_node currentNode, Turn *turn)
@@ -4032,6 +4034,7 @@ bool MEIInput::ReadFermata(Object *parent, pugi::xml_node fermata)
     vrvFermata->ReadColor(fermata);
     vrvFermata->ReadFermataVis(fermata);
     vrvFermata->ReadPlacement(fermata);
+    vrvFermata->ReadExtSym(fermata);
 
     parent->AddChild(vrvFermata);
     ReadUnsupportedAttr(fermata, vrvFermata);
@@ -4245,6 +4248,7 @@ bool MEIInput::ReadTrill(Object *parent, pugi::xml_node trill)
     vrvTrill->ReadNNumberLike(trill);
     vrvTrill->ReadOrnamentAccid(trill);
     vrvTrill->ReadPlacement(trill);
+    vrvTrill->ReadExtSym(trill);
 
     parent->AddChild(vrvTrill);
     ReadUnsupportedAttr(trill, vrvTrill);
