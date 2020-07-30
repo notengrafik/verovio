@@ -1276,6 +1276,7 @@ void MEIOutput::WriteMordent(pugi::xml_node currentNode, Mordent *mordent)
     mordent->WriteOrnamentAccid(currentNode);
     mordent->WritePlacement(currentNode);
     mordent->WriteMordentLog(currentNode);
+    mordent->WriteExtSym(currentNode);
 }
 
 void MEIOutput::WriteOctave(pugi::xml_node currentNode, Octave *octave)
