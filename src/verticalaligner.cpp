@@ -684,7 +684,8 @@ int StaffAlignment::AlignVerticallyEnd(FunctorParams *functorParams)
                 }
             }
         }
-        params->m_cumulatedShift += spacing * params->m_doc->GetDrawingUnit(100);
+        params->m_cumulatedShift = std::max(params->m_cumulatedShift, spacing * params->m_doc->GetDrawingUnit(100));
+
     }
 
     SetYRel(-params->m_cumulatedShift);
