@@ -1140,13 +1140,15 @@ void View::DrawSylConnector(
 
     // The both correspond to the current system, which means no system break in-between (simple case)
     if (spanningType == SPANNING_START_END) {
-        x1 = syl->GetContentRight();
-        if (syl->m_nextWordSyl) {
+        if (syl->HasContentBB()) {
+            x1 = syl->GetContentRight();
+        }
+        if (syl->m_nextWordSyl && syl->m_nextWordSyl->HasContentBB()) {
             x2 = syl->m_nextWordSyl->GetContentLeft();
         }
     }
     // Only the first parent is the same, this means that the syl is "open" at the end of the system
-    else if (spanningType == SPANNING_START) {
+    else if (spanningType == SPANNING_START && syl->HasContentBB()) {
         x1 = syl->GetContentRight();
     }
     // We are in the system of the last note - draw the connector from the beginning of the system
@@ -1163,7 +1165,7 @@ void View::DrawSylConnector(
             }
         }
         // Otherwise just adjust x2
-        if (syl->m_nextWordSyl) {
+        if (syl->m_nextWordSyl && syl->m_nextWordSyl->HasContentBB()) {
             x2 = syl->m_nextWordSyl->GetContentLeft();
         }
         x1 -= m_doc->GetDrawingDoubleUnit(staff->m_drawingStaffSize);
