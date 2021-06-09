@@ -21,6 +21,7 @@
 #include "bracketspan.h"
 #include "breath.h"
 #include "btrem.h"
+#include "caesura.h"
 #include "chord.h"
 #include "clef.h"
 #include "comparison.h"
@@ -2900,10 +2901,12 @@ void MusicXmlInput::ReadMusicXmlNote(
 
     m_ID = "#" + element->GetUuid();
 
-    // breath marks
-    pugi::xpath_node xmlBreath = notations.node().select_node("articulations/breath-mark");
-    if (xmlBreath) {
-        Breath *breath = new Breath();
+    // breath marks and caesuras
+    pugi::xpath_node_set xmlPauses
+        = notations.node().select_nodes("articulations/*[self::breath-mark or self::caesura]");
+    for (pugi::xpath_node_set::const_iterator it = xmlPauses.begin(); it != xmlPauses.end(); ++it) {
+        pugi::xpath_node xmlBreath = *it;
+        Breath *breath = std::string(xmlBreath.node().name()) == "caesura" ? new Caesura() : new Breath();
         m_controlElements.push_back(std::make_pair(measureNum, breath));
         breath->SetStaff(staff->AttNInteger::StrToXsdPositiveIntegerList(std::to_string(staff->GetN())));
         breath->SetPlace(
